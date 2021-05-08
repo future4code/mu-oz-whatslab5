@@ -11,11 +11,15 @@ class Messages extends React.Component {
         mensagem: "teste"
     }
 
-    
+    createChat = () => {
+        return this.props.messages.map((i) => {
+            return <p>{i}</p>;
+          });
+    }
 
     render() {
         return <MessagesDiv>
-            <p>usuaroX: mensagemEscrita</p>
+            {this.createChat()}
         </MessagesDiv>
     }
 }
