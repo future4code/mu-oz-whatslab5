@@ -1,8 +1,6 @@
 import React from "react";
-import Inputname from "./Components/inputname";
 import Messages from "./Components/messages";
-import Inputmessage from "./Components/inputmessage";
-import Button from "./Components/button";
+import Inputs from "./Components/inputs";
 import styled from "styled-components";
 
 
@@ -18,19 +16,11 @@ const MainColumn = styled.div`
   margin: auto;
 `
 
-const Inputs = styled.div`
-  display: flex;
-`
-
 function App() {
   return (
     <MainColumn>
       <Messages/>
-      <Inputs>
-        <Inputname/>
-        <Inputmessage/>
-        <Button/>
-      </Inputs>
+      <Inputs/>
     </MainColumn>
   );
 }

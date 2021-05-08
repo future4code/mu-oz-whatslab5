@@ -3,12 +3,19 @@ import styled from "styled-components";
 
 const MessagesDiv = styled.div`
     padding: 5px 20px;
+    
 `
 
 class Messages extends React.Component {
+    state = {
+        mensagem: "teste"
+    }
+
+    
+
     render() {
         return <MessagesDiv>
-            <p>teste mensagens</p>
+            <p>usuaroX: mensagemEscrita</p>
         </MessagesDiv>
     }
 }
