@@ -19,7 +19,7 @@ const P = styled.p`
               {messages.map((index) => (
               <Div>
                 <P>{index.user}</P>
-                <P2>: {index.message}</P2>
+                <p>: {index.message}</p>
               </Div>
             ))}
           </MessagesDiv>
